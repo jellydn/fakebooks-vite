@@ -17,8 +17,18 @@ yarn install
 
 ## Usage
 
+### Vite
+
 ```sh
 yarn dev
+yarn vite-build
+```
+
+### Create-React-App
+
+```sh
+yarn start
+yarn build
 ```
 
 ## Why
@@ -47,6 +57,10 @@ Remove legacy plugin
 
 ### Result
 
+- Start development environment less than 1 second (223ms).
+  <img width="866" alt="image" src="https://user-images.githubusercontent.com/870029/164910000-582a8cc5-3b0e-41b9-a7e6-b4f0fe2aeefa.png">
+
+- Build command
   <img width="1787" alt="image" src="https://user-images.githubusercontent.com/870029/164899355-91bd6295-9b2a-423d-8e52-9c9b37eac220.png">
 
 ## Author
