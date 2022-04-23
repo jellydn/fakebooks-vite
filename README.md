@@ -1,14 +1,64 @@
-# CRA Fakebooks App
+# Welcome to fakebooks-vite 👋
 
-This is a (very) simple implementation of the fakebooks mock app demonstrated on [remix.run](https://remix.run). The backend is served by [the Remix version of this app](https://github.com/kentcdodds/fakebooks-remix). There is no database, but there is an arbitrary delay of 40-100ms whenever accessing "invoice data" to simulate querying a real database.
+![Version](https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000)
+[![Twitter: jellydn](https://img.shields.io/twitter/follow/jellydn.svg?style=social)](https://twitter.com/jellydn)
 
-This inteded to be used as an example of a fairly standard client-rendered app as a comparison to a Remix app. The sister repo to this one can be found at [kentcdodds/fakebooks-remix](https://github.com/kentcdodds/fakebooks-remix).
+> How to migrate vite to create-react-app
 
-- [Fakebooks Remix Production Deploy](https://fakebooks-remix.fly.dev/sales/invoices) - Deployed on Fly in the Dallas Region
-- [Fakebooks CRA Production Deploy](https://fakebooks-cra.netlify.app/sales/invoices) - Deployed on Netlify's global CDN
+### 🏠 [Homepage](https://github.com/jellydn/fakebooks-vite/tree/feature/wp2vite)
 
-The main objective of this comparison (currently) is to demonstrate the UX and DX difference between the two approaches in regards to data loading. Test out the initial page load as well as switching between different pages.
+### ✨ [Demo](https://fakebooks-vite.vercel.app/)
 
-Please do dig into the code and compare the level of complexity. Keep in mind that a CRA app is only half the story. You need a backend. This Remix app's backend is used to handle that for the CRA version.
+## Install
 
-Another thing to keep in mind is that this app doesn't handle mutations (yet?). Adding mutation support would drastically complicate the CRA implementation, but would be a pretty simple thing to handle for Remix.
+```sh
+yarn install
+```
+
+## Usage
+
+```sh
+yarn dev
+```
+
+## Why
+
+The development speed is about 80% faster than that of webpack, and the construction speed is about 50% faster than that of webpack.
+
+## How
+
+### Step 1
+
+Run automatic conversion tool https://github.com/tnfe/wp2vite
+
+```sh
+npx wp2vite
+```
+
+### Step 2
+
+Fix import alias
+
+<img width="1539" alt="image" src="https://user-images.githubusercontent.com/870029/164909707-dc16c863-402e-4f1e-9753-c6c7ee29358d.png">
+
+Remove legacy plugin
+
+<img width="1214" alt="image" src="https://user-images.githubusercontent.com/870029/164909672-9226e71e-6b1c-445c-8045-0c5cfc845d37.png">
+
+### Result
+
+  <img width="1787" alt="image" src="https://user-images.githubusercontent.com/870029/164899355-91bd6295-9b2a-423d-8e52-9c9b37eac220.png">
+
+## Author
+
+- Website: https://productsway.com/
+- Twitter: [@jellydn](https://twitter.com/jellydn)
+- Github: [@jellydn](https://github.com/jellydn)
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+---
+
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
